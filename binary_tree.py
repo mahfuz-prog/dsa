@@ -34,7 +34,6 @@ print("Build tree:", root)
 # pre order traversal, BFS
 # fashion: root -> left -> right
 # tc O(n)
-
 def traverse_pre_order(root, ans):
     if not root:
         ans.append("*")
@@ -53,7 +52,6 @@ print("Pre order traversal:", ans)
 # in order traversal, BFS
 # fashion: left -> root -> right
 # tc O(n)
-
 def traverse_in_order(root, ans):
     # currnent node
     if not root:
@@ -72,7 +70,6 @@ print("In order traversal:", ans)
 # post order traversal, BFS
 # fashion: left -> right -> root
 # tc O(n)
-
 def traverse_post_order(root, ans):
     # currnent node
     if not root:
@@ -91,7 +88,6 @@ print()
 # ======================================
 # level order traversal, DFS
 # tc O(n)
-
 q = deque()
 q.append(root)
 q.append(None)
@@ -120,7 +116,6 @@ print()
 # height of tree
 # calculate height post order
 # tc O(n)
-
 def height(root):
     if not root:
         return 0
@@ -176,7 +171,6 @@ print("Diameter of tree 2:", ans)
 
 # ================================================
 # count
-
 def count(root):
     if not root:
         return 0
@@ -192,7 +186,6 @@ print("Count: ", c)
 
 # =======================================================
 # top view of a tree
-
 def top_view(root):
     res = {}
     q = deque()
@@ -222,7 +215,6 @@ print()
 
 # =================================================
 # bottom view
-
 def bottom_view(root):
     res = {}
     q = deque()
